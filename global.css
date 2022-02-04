@@ -1,0 +1,20 @@
+* {
+  --blue-1: #879ebd;
+  --blue-2: #15273f;
+  --blue-3: #0d1a2d;
+  --blue-4: #0c1729;
+  --green: #05f2db;
+}
+
+body,
+html,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  color: var(--blue-1);
+  background: var(--blue-3);
+}

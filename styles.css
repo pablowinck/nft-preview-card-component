@@ -1,0 +1,94 @@
+body {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  height: max(10rem, 60vh);
+  width: min(30vw, 100%);
+  background: var(--blue-2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 55% 0.8fr 0.2fr;
+  grid-gap: 1.5rem;
+
+  box-shadow: 0 10px 20px var(--blue-4);
+}
+
+.image {
+  height: 100%;
+  width: 100%;
+  border-radius: 12px;
+  background-image: url("./images/image-equilibrium.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.content .title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.content .description {
+  font-size: 1.1rem;
+}
+
+.content .props {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content .props .value {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+
+  color: var(--green);
+  font-weight: bold;
+}
+
+.created-by-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.separator {
+  height: 1px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.created-at {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.created-by {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+.avatar {
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-image: url("./images/image-avatar.png");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid white;
+}
